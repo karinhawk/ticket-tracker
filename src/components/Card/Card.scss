@@ -1,0 +1,24 @@
+.card {
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .card__id-div {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__name {
+        width: 200px;
+        margin: 0;
+    }
+    &__role {
+        width: 200px;
+        margin: 0;
+    }
+}
