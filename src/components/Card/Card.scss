@@ -1,24 +1,27 @@
 .card {
-    height: 300px;
-    width: 200px;
-    border: 2px solid black;
+    height: 30vh;
+    width: 20vh;
+    border-radius: 5px;
     padding: 10px;
+    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-size: 0.5rem;
+    background-color: whitesmoke;
     .card__id-div {
-        height: 100px;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
     &__name {
-        width: 200px;
+        width: fit-content;
         margin: 0;
     }
     &__role {
-        width: 200px;
+        width: fit-content;
         margin: 0;
     }
 }

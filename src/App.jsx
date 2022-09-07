@@ -1,12 +1,22 @@
 import './App.scss';
 import Card from './components/Card/Card';
 import Heading from './components/Heading/Heading';
+import team from './team.js'
 
 function App() {
+
+  const mappedCards = team.map((employee) => {
+    return (
+      <Card key={employee.id} name = {employee.name} role = {employee.role}/>
+    )
+  })
+
   return (
     <div className="app">
       <Heading />
-      <Card />
+      <div className='cards'>
+      {mappedCards}
+      </div>
     </div>
   );
 }
