@@ -10,18 +10,4 @@
     align-items: center;
     font-size: 0.5rem;
     background-color: whitesmoke;
-    .card__id-div {
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    &__name {
-        width: fit-content;
-        margin: 0;
-    }
-    &__role {
-        width: fit-content;
-        margin: 0;
-    }
 }

@@ -1,5 +1,6 @@
 import './App.scss';
 import Card from './components/Card/Card';
+import FormButton from './components/FormButton/FormButton';
 import Heading from './components/Heading/Heading';
 import team from './team.js'
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="app">
       <Heading />
+      <FormButton />
       <div className='cards'>
       {mappedCards}
       </div>
