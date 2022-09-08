@@ -11,14 +11,14 @@ const Counter = () => {
     }
     const handleDecrease = () => {
         setTally(tally-1)
-        if (tally == 0) {
+        if (tally === 0) {
             setTally(tally)
         }
     }
 
     return (
         <div className="counter">
-            <h2 className="counter__heading">Counter</h2>
+            <h2 className="counter__heading">Tasks Completed</h2>
             <h2 className='counter__tally'>{tally}</h2>
             <div className='counter__buttons'>
                 <button className='counter__button decrease' onClick={handleDecrease}>-</button>

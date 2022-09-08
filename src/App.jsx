@@ -12,10 +12,29 @@ function App() {
     )
   })
 
+  // const createEmployeeObject = () => {
+  //   console.log(newName);
+  //   console.log(newRole);
+
+  //   const currentId = team.length;
+  //   console.log(currentId);
+  //   const newId = currentId + 1;
+  //   console.log(newId);
+
+  //   const newEmployee = {
+  //     id: newId,
+  //     name: newName,
+  //     role: newRole,
+  //   }
+  //   team.push(newEmployee)
+  //   console.log(team);
+  //   mapCards();
+  // }
+
   return (
     <div className="app">
       <Heading />
-      <FormButton />
+      <FormButton mapCards = {mappedCards}/>
       <div className='cards'>
       {mappedCards}
       </div>

@@ -1,0 +1,59 @@
+@use "../../variables" as *;
+
+.form {
+    height: fit-content;
+    width: fit-content;
+    margin: 50px;
+    border-radius: 10px;
+    background-color:$color-card;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+    &__div-label {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    &__div-button {
+        display: flex;
+        margin: 10px;
+    }
+    &__button {
+        height: 5vh;
+        width: fit-content;
+        padding: 10px;
+        margin: 10px;
+        background-color: $color-button;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        width: 30vw;
+        margin: 10px;
+    }
+
+}
+
+.toggle {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 720px) {
+    .toggle-div {
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

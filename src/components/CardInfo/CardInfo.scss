@@ -1,16 +1,36 @@
 
 
 .card__id-div {
-    height: 30vh;
+    height: 20vh;
+    width: 18vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    font-size: 16px;
+    padding: 20px;
 }
 .card__name {
-    width: fit-content;
-    margin: 0;
+    height: fit-content;
+    width: 15vw;
+    padding: 5px;
+    font-size: 35px;
 }
 .card__role {
-    width: fit-content;
-    margin: 0;
+    height: fit-content;
+    width: 15vw;
+    padding: 5px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 720px) {
+    .card__id-div {
+        width: 75vw;
+        padding: 20px;
+    }
+    .card__name {
+        width: 75vw;
+    }
+    .card__role {
+        width: 75vw;
+    }
 }
