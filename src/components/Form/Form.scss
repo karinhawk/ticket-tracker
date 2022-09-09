@@ -1,0 +1,92 @@
+@use "../../variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form__page {
+    background-color: rgba(black, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form__content {
+    height: fit-content;
+    width: 30vw;
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    .form__cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .form__div-label {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .form__div-button {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .form__label {
+        font-size: 25px;
+    }
+    .form__button {
+        height: 7vh;
+        width: fit-content;
+        font-size: 30px;
+        padding: 10px;
+        margin: 10px;
+        background-color: $color-card;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .form__input {
+        height: 3vh;
+        width: 20vw;
+        margin: 10px;
+        font-size: 20px;
+    }
+} 
+.toggle {
+    margin-left: 50px;
+    height: 100px;
+    width: auto;
+}
+
+@media screen and (max-width: 720px) {
+    .toggle-div {
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

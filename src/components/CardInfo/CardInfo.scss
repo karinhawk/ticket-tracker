@@ -1,35 +1,38 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .card__id-div {
-    height: 15vh;
+    height: fit-content;
     width: 25vw;
-    padding: 10px;
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .card__name {
+    height: fit-content;
     width: 20vw;
     font-size: 35px;
     padding: 5px;
 }
 .card__role {
+    height: fit-content;
     width: 20vw;
     padding: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
 }
 
 @media screen and (max-width: 720px) {
     .card__id-div {
-        width: 75vw;
+        width: 55vw;
         padding: 20px;
     }
     .card__name {
-        width: 75vw;
+        width: 55vw;
     }
     .card__role {
-        width: 75vw;
+        width: 55vw;
     }
 }

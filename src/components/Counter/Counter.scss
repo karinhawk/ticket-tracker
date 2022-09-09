@@ -1,7 +1,12 @@
 @use "../../variables" as *;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .counter {
-    height: 30vh;
+    height: 25vh;
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -33,12 +38,12 @@
 
 @media screen and (max-width: 720px) {
     .counter {
-        width: 80vw;
+        width: 50vw;
     }
     .counter__buttons {
-        width: 80vw;
+        width: 50vw;
     }
     .counter__button {
-        width: 35vw;
+        width: 20vw;
     }
 }
