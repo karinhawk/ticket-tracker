@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .counter {
+    height: 30vh;
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -19,15 +20,15 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        .counter__button {
-            width: 10vw;
-            height: 5vh;
-            border: none;
-            border-radius: 50px;
-            margin: 5px;
-            background-color: $color-button;
     }
-    }
+    &__button {
+        width: 10vw;
+        height: 5vh;
+        border: none;
+        border-radius: 50px;
+        margin: 5px;
+        background-color: $color-button;
+}
 }
 
 @media screen and (max-width: 720px) {

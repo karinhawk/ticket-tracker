@@ -3,38 +3,41 @@ import Card from './components/Card/Card';
 import FormButton from './components/FormButton/FormButton';
 import Heading from './components/Heading/Heading';
 import team from './team.js'
+import { useState } from "react";
 
 function App() {
 
-  const mappedCards = team.map((employee) => {
+  
+  const [showForm, setShowForm] = useState(false);
+  const [employees, setEmployees] = useState([...team]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newName = event.target[0].value;
+    const newRole = event.target[1].value;
+
+    const newId = team.length + 1;
+    setEmployees(employees.concat([{
+      id: newId,
+      name: newName,
+      role: newRole,
+    }]))
+  }
+
+  const handleForm = () => {
+    setShowForm(!showForm)
+  }
+
+  const mappedCards = employees.map((employee) => {
     return (
       <Card key={employee.id} name = {employee.name} role = {employee.role}/>
     )
   })
 
-  // const createEmployeeObject = () => {
-  //   console.log(newName);
-  //   console.log(newRole);
-
-  //   const currentId = team.length;
-  //   console.log(currentId);
-  //   const newId = currentId + 1;
-  //   console.log(newId);
-
-  //   const newEmployee = {
-  //     id: newId,
-  //     name: newName,
-  //     role: newRole,
-  //   }
-  //   team.push(newEmployee)
-  //   console.log(team);
-  //   mapCards();
-  // }
-
   return (
     <div className="app">
       <Heading />
-      <FormButton mapCards = {mappedCards}/>
+      <FormButton showForm = {showForm} handleForm = {handleForm} handleSubmit={handleSubmit}/>
       <div className='cards'>
       {mappedCards}
       </div>
@@ -43,13 +46,3 @@ function App() {
 }
 
 export default App;
-
-
-
-//track number of tickets coworkers have completed
-//each employee is a user on the site and each can increment and decrement their amount of tickets
-
-//folders: components
-//in components have folders for header; card; counter; 
-//things in card must import counter
-//app must import all

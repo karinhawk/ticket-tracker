@@ -1,24 +1,23 @@
 
 
 .card__id-div {
-    height: 20vh;
-    width: 18vw;
+    height: 15vh;
+    width: 25vw;
+    padding: 10px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 16px;
-    padding: 20px;
 }
 .card__name {
-    height: fit-content;
-    width: 15vw;
-    padding: 5px;
+    width: 20vw;
     font-size: 35px;
+    padding: 5px;
 }
 .card__role {
-    height: fit-content;
-    width: 15vw;
+    width: 20vw;
     padding: 5px;
+    font-size: 25px;
     font-style: italic;
 }
 
